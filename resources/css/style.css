@@ -1,0 +1,107 @@
+/* SITE-WIDE CSS */
+html {
+  font-family: 'Trirong', serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+a {
+  color: blanchedalmond;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.uc {
+  text-transform: uppercase;
+}
+
+/* TOP SECTION CSS */
+
+.top-wrap {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* border: 1pt solid cyan; */
+}
+
+.top {
+  width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: flex-start;
+  /* border: 1pt solid yellow; */
+  /* I had mistakenly set align-items instead of align-content and the relative positioning of .banner was not working properly. Once I fixed this it worked without issue. */
+}
+
+.head {
+  width: 100%;
+  height: 3rem;
+  display: inline-flex;
+  margin-top: 1rem;
+  background-color: chocolate;
+  border-radius: 0.25rem 0.8rem;
+  /* border: 1pt solid magenta; */
+}
+
+.brand {
+  display: flex;
+  flex-grow: 2;
+  /* width: auto; */
+  align-items: center;
+  /* border: 1pt solid orange; */
+}
+
+.logo {
+  height: 1.3rem;
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+}
+
+.logotype {
+  /* font-family: 'Trirong', serif; */
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 1.15rem;
+  letter-spacing: 1px;
+  /* border: 1pt solid cyan; */
+}
+
+.menu {
+  display: flex;
+  padding-right: 1rem;
+  /* border: 1pt solid yellow; */
+}
+
+.menu-item {
+  padding: 1rem 1rem;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 5rem;
+  top: 10rem;
+  left: 2rem;
+  background-color: aliceblue;
+  border-radius: 0.25rem;
+}
+
+.banner-blurb {
+  /* font-family: 'Trirong', serif; */
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: lightslategray;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  padding: 1.5rem 4rem;
+  /* border: 1pt solid magenta; */
+}

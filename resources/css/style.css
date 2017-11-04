@@ -69,7 +69,7 @@ a {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: white;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   letter-spacing: 1px;
   /* border: 1pt solid cyan; */
 }
@@ -97,11 +97,70 @@ a {
 
 .banner-blurb {
   /* font-family: 'Trirong', serif; */
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 600;
   color: lightslategray;
   line-height: 1.2;
   letter-spacing: 2px;
   padding: 1.5rem 4rem;
   /* border: 1pt solid magenta; */
+}
+
+/* MID SECTION CSS */
+
+.mid-wrap {
+  display: flex;
+  justify-content: center;
+  border: 3pt solid magenta;
+}
+
+.mid {
+  width: 960px;
+  border: 2pt solid cyan;
+}
+
+.mid-upper {
+  display: flex;
+  justify-content: center;
+  border: 1pt solid yellow;
+}
+
+.services-wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 3pt solid gray;
+}
+
+.services {
+  border: 1pt solid cyan;
+}
+
+.service-icon {
+  border: 1pt solid yellow;
+}
+
+.service-name {
+  border: 1pt solid magenta;
+}
+
+.mid-lower {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 4pt solid cyan;
+}
+
+.detail-wrap {
+  width: 35%;
+  border: 1pt solid yellow;
+}
+
+.detail-title {
+  border: 1pt solid magenta;
+}
+
+.detail {
+  border: 1pt solid cyan;
 }

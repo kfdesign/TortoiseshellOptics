@@ -20,7 +20,20 @@ a {
   letter-spacing: 1pt;
 }
 
-/* TOP SECTION CSS */
+.op {
+  opacity: 0.7;
+}
+
+/* .content {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 5pt solid grey;
+}
+*/
+
+/* //// TOP SECTION CSS //// */
 
 .top-wrap {
   width: 100%;
@@ -57,7 +70,6 @@ a {
 .brand {
   display: flex;
   flex-grow: 2;
-  /* width: auto; */
   align-items: center;
   /* border: 1pt solid orange; */
 }
@@ -106,7 +118,6 @@ a {
 }
 
 .banner-blurb {
-  /* font-family: 'Trirong', serif; */
   font-size: 2.25rem;
   font-weight: 600;
   color: lightslategray;
@@ -117,9 +128,10 @@ a {
   /* border: 1pt solid magenta; */
 }
 
-/* MID SECTION CSS */
+/* //// MID SECTION CSS //// */
 
 .mid-wrap {
+  height: 100%;
   display: flex;
   justify-content: center;
   /* border: 3pt solid magenta; */
@@ -140,10 +152,7 @@ a {
 .services-wrap {
   width: 100%;
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: center;
-  /* align-items: center; */
-  /* align-content: space-between; */
   /* border: 2pt solid gray; */
 }
 
@@ -173,6 +182,8 @@ a {
   /* border: 1pt solid magenta; */
 }
 
+/* //// MID SECTION DETAILS //// */
+
 .wide {
   width: 10rem;
 }
@@ -188,10 +199,6 @@ a {
 
 .fitting, .delivery {
   width: 5rem;
-}
-
-.op {
-  opacity: 0.7;
 }
 
 .mid-lower {
@@ -228,18 +235,20 @@ a {
   /* border: 1pt solid cyan; */
 }
 
+/* //// BOTTOM SECTION CSS //// */
+
 .bottom-wrap {
   width: 100%;
-  /* height: 30rem; */
   display: flex;
   justify-content: center;
-  /* border: 5px solid yellow; */
+  /* align-items: flex-end; */
+  /* align-items: flex-end; */
+  /* border: 5px solid magenta; */
 }
 
 .footer {
-  width: 960px;
+    width: 960px;
   display: flex;
-  /* justify-content: flex-end; */
   align-content: flex-start;
   background-color: sandybrown;
   border-radius: 1rem 1rem 0 0;
@@ -252,4 +261,49 @@ a {
   align-items: left;
   flex-grow: 0;
   padding-left: 2rem;
+}
+
+/* //// RESPONSIVE MEDIA QUERIES //// */
+
+@media only screen and (max-width: 960px) {
+/* ruleset for screens 960px and below */
+  .top-wrap {
+    height: 22rem;
+    /* border: 1pt solid cyan; */
+  }
+
+  .top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: flex-start;
+    /* border: 1pt solid yellow; */
+  }
+
+  .head {
+    margin-top: 0rem;
+    border-radius: 0 0 0.8rem 0.8rem;
+    /* border: 1pt solid magenta; */
+  }
+
+  .banner {
+    position: relative;
+    height: 5rem;
+    top: 5rem;
+    left: -2rem;
+  }
+  .banner-blurb {
+    font-size: 1.33rem;
+    padding: 0.75rem 2.6rem 0.75rem 2.7rem;
+    /* border: 1pt solid magenta; */
+  }
+
+  .footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  
 }

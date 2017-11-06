@@ -16,6 +16,10 @@ a {
   text-transform: uppercase;
 }
 
+.track {
+  letter-spacing: 1pt;
+}
+
 /* TOP SECTION CSS */
 
 .top-wrap {
@@ -103,6 +107,7 @@ a {
   line-height: 1.2;
   letter-spacing: 2px;
   padding: 1.5rem 4rem;
+  text-shadow: 1.5px 1.5px 0.5px white;
   /* border: 1pt solid magenta; */
 }
 
@@ -111,56 +116,108 @@ a {
 .mid-wrap {
   display: flex;
   justify-content: center;
-  border: 3pt solid magenta;
+  /* border: 3pt solid magenta; */
 }
 
 .mid {
   width: 960px;
-  border: 2pt solid cyan;
+  /* border: 2pt solid cyan; */
 }
 
 .mid-upper {
   display: flex;
   justify-content: center;
-  border: 1pt solid yellow;
+  margin-top: 3rem;
+  /* border: 1pt solid yellow; */
 }
 
 .services-wrap {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
-  border: 3pt solid gray;
+  /* align-items: center; */
+  /* align-content: space-between; */
+  /* border: 2pt solid gray; */
 }
 
 .services {
-  border: 1pt solid cyan;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  width: 13rem;
 }
 
 .service-icon {
-  border: 1pt solid yellow;
+  width: 10rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  /* border: 1pt solid cyan; */
 }
 
 .service-name {
-  border: 1pt solid magenta;
+  width: 5rem;
+  text-align: center;
+  color: lightslategray;
+  line-height: 1.2rem;
+  /* border: 1pt solid magenta; */
+}
+
+.wide {
+  width: 10rem;
+}
+
+.v-rule {
+  border-left: 1px solid chocolate;
+  border-right: 1px solid chocolate;
+}
+
+.exam {
+  width: 3.5rem;
+}
+
+.fitting, .delivery {
+  width: 5rem;
+}
+
+.op {
+  opacity: 0.7;
 }
 
 .mid-lower {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  border: 4pt solid cyan;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 3rem;
+  /* border: 4pt solid cyan; */
 }
 
 .detail-wrap {
+  display: flex;
+  flex-wrap: wrap;
   width: 35%;
-  border: 1pt solid yellow;
+  margin: 0 2.5% 5rem 2.5%;
+  /* border: 1pt solid yellow; */
 }
 
 .detail-title {
-  border: 1pt solid magenta;
+  width: 10rem;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: blanchedalmond;
+  background-color: chocolate;
+  border-radius: 0.2rem;
+  /* border: 1pt solid magenta; */
 }
 
 .detail {
-  border: 1pt solid cyan;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  /* border: 1pt solid cyan; */
 }

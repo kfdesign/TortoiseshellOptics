@@ -68,7 +68,7 @@ a {
   padding-right: 1rem;
 }
 
-.logotype {
+.logotype, .copyright {
   /* font-family: 'Trirong', serif; */
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -76,6 +76,12 @@ a {
   font-size: 1.05rem;
   letter-spacing: 1px;
   /* border: 1pt solid cyan; */
+}
+
+.copyright {
+  font-size: 0.9rem;
+  padding-top: 0.15rem;
+  color: black;
 }
 
 .menu {
@@ -106,7 +112,7 @@ a {
   color: lightslategray;
   line-height: 1.2;
   letter-spacing: 2px;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 3.6rem 1.5rem 3.7rem;
   text-shadow: 1.5px 1.5px 0.5px white;
   /* border: 1pt solid magenta; */
 }
@@ -220,4 +226,30 @@ a {
   font-size: 1rem;
   line-height: 1.4rem;
   /* border: 1pt solid cyan; */
+}
+
+.bottom-wrap {
+  width: 100%;
+  /* height: 30rem; */
+  display: flex;
+  justify-content: center;
+  /* border: 5px solid yellow; */
+}
+
+.footer {
+  width: 960px;
+  display: flex;
+  /* justify-content: flex-end; */
+  align-content: flex-start;
+  background-color: sandybrown;
+  border-radius: 1rem 1rem 0 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  /* border: 3pt solid blue; */
+}
+
+.bottom {
+  align-items: left;
+  flex-grow: 0;
+  padding-left: 2rem;
 }

@@ -24,15 +24,6 @@ a {
   opacity: 0.7;
 }
 
-/* .content {
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  border: 5pt solid grey;
-}
-*/
-
 /* //// TOP SECTION CSS //// */
 
 .top-wrap {
@@ -44,7 +35,6 @@ a {
   background-repeat: no-repeat;
   background-position: 30% 20%;
   background-size: cover;
-  /* border: 1pt solid cyan; */
 }
 
 .top {
@@ -53,7 +43,6 @@ a {
   flex-wrap: wrap;
   justify-content: flex-end;
   align-content: flex-start;
-  /* border: 1pt solid yellow; */
   /* I had mistakenly set align-items instead of align-content and the relative positioning of .banner was not working properly. Once I fixed this it worked without issue. */
 }
 
@@ -64,14 +53,12 @@ a {
   margin-top: 1rem;
   background-color: chocolate;
   border-radius: 0.25rem 0.8rem;
-  /* border: 1pt solid magenta; */
 }
 
 .brand {
   display: flex;
   flex-grow: 2;
   align-items: center;
-  /* border: 1pt solid orange; */
 }
 
 .logo, .logofoot {
@@ -81,13 +68,11 @@ a {
 }
 
 .logotype, .copyright {
-  /* font-family: 'Trirong', serif; */
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: white;
   font-size: 1.05rem;
   letter-spacing: 1px;
-  /* border: 1pt solid cyan; */
 }
 
 .copyright {
@@ -99,7 +84,6 @@ a {
 .menu {
   display: flex;
   padding-right: 1rem;
-  /* border: 1pt solid yellow; */
 }
 
 .menu-item {
@@ -131,7 +115,6 @@ a {
   letter-spacing: 2px;
   padding: 1.5rem 3.6rem 1.5rem 3.7rem;
   text-shadow: 1.5px 1.5px 0.5px white;
-  /* border: 1pt solid magenta; */
 }
 
 /* //// MID SECTION CSS //// */
@@ -140,26 +123,22 @@ a {
   height: 100%;
   display: flex;
   justify-content: center;
-  /* border: 3pt solid magenta; */
 }
 
 .mid {
   width: 960px;
-  /* border: 2pt solid cyan; */
 }
 
 .mid-upper {
   display: flex;
   justify-content: center;
   margin-top: 3rem;
-  /* border: 1pt solid yellow; */
 }
 
 .services-wrap {
   width: 100%;
   display: flex;
   justify-content: center;
-  /* border: 2pt solid gray; */
 }
 
 .services {
@@ -177,7 +156,6 @@ a {
   justify-content: center;
   align-items: center;
   margin-bottom: 0.5rem;
-  /* border: 1pt solid cyan; */
 }
 
 .service-name {
@@ -187,7 +165,6 @@ a {
   line-height: 1.2rem;
   margin-left: 10rem;
   margin-right: 10rem;
-  /* border: 1pt solid magenta; */
 }
 
 /* //// MID SECTION DETAILS //// */
@@ -215,7 +192,6 @@ a {
   justify-content: center;
   align-items: flex-start;
   margin-top: 3rem;
-  /* border: 4pt solid cyan; */
 }
 
 .detail-wrap {
@@ -223,7 +199,6 @@ a {
   flex-wrap: wrap;
   width: 35%;
   margin: 0 2.5% 5rem 2.5%;
-  /* border: 1pt solid yellow; */
 }
 
 .detail-title {
@@ -234,13 +209,11 @@ a {
   color: blanchedalmond;
   background-color: chocolate;
   border-radius: 0.2rem;
-  /* border: 1pt solid magenta; */
 }
 
 .detail {
   font-size: 1rem;
   line-height: 1.4rem;
-  /* border: 1pt solid cyan; */
 }
 
 /* //// BOTTOM SECTION CSS //// */
@@ -249,9 +222,6 @@ a {
   width: 100%;
   display: flex;
   justify-content: center;
-  /* align-items: flex-end; */
-  /* align-items: flex-end; */
-  /* border: 5px solid magenta; */
 }
 
 .footer {
@@ -262,7 +232,6 @@ a {
   border-radius: 1rem 1rem 0 0;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  /* border: 3pt solid blue; */
 }
 
 .bottom {
@@ -277,7 +246,6 @@ a {
 /* ruleset for screens 960px and below */
   .top-wrap {
     height: 22rem;
-    /* border: 1pt solid cyan; */
   }
 
   .top {
@@ -285,13 +253,11 @@ a {
     flex-wrap: wrap;
     justify-content: flex-end;
     align-content: flex-start;
-    /* border: 1pt solid yellow; */
   }
 
   .head {
     margin-top: 0rem;
     border-radius: 0 0 0.8rem 0.8rem;
-    /* border: 1pt solid magenta; */
   }
 
   .banner {
@@ -304,7 +270,6 @@ a {
   .banner-blurb {
     font-size: 1.33rem;
     padding: 0.75rem 2.6rem 0.75rem 2.7rem;
-    /* border: 1pt solid magenta; */
   }
 
   .footer {
@@ -315,7 +280,7 @@ a {
 
 
 @media only screen and (max-width: 640px) {
-
+  /* ruleset for screens 640px and below */
   .top-wrap {
     width: 100%;
     height: 17rem;
@@ -338,8 +303,6 @@ a {
   .banner {
     display: flex;
     justify-content: center;
-    /* text-align: center; */
-    /* position: static; */
     height: auto;
     width: 100%;
     top: 10.5rem;
@@ -372,36 +335,29 @@ a {
     width: 75%;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    /* margin-top: 1.5rem; */
-    /* margin-bottom: 1.5rem; */
   }
 
   .v-rule {
-    border-left: 0px solid chocolate;
-    border-right: 0px solid chocolate;
+    border-left: none;
+    border-right: none;
     border-top: 1px solid chocolate;
     border-bottom: 1px solid chocolate;
-
   }
 
   .mid-lower {
-    /* display: inline-block; */
     margin-top: 3.77rem;
   }
 
   .detail-wrap {
     display: flex;
     justify-content: center;
-    /* flex-wrap: wrap; */
     flex-shrink: 1;
     width: 100%;
     margin: 0 0 0 0;
-    /* border: 5pt solid yellow; */
   }
 
   .detail-title {
     width: 100%;
-    /* padding: 0.5rem 1.25rem; */
     margin-bottom: 0.8rem;
     font-size: 0.9rem;
     border-radius: 0rem;
@@ -413,16 +369,10 @@ a {
     line-height: 1.4rem;
     width: 80%;
     margin-bottom: 4rem;
-    /* margin-left: 3rem; */
-    /* margin-right: 3rem; */
-    /* flex-shrink: 2; */
-    /* border: 1pt solid cyan; */
-  }
+ }
 
   .footer {
     justify-content: center;
-    /* align-content: flex-start; */
-    /* border: 3pt solid blue; */
   }
 
   .logofoot {
